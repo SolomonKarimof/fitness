@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background-color: #00f9bb;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.top h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/smile.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 70%;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header .logo {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 8.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: black;
+}
+
+.header .icons div:hover {
+    color: #c53678;
+}
+
+#menu-btn {
+    display: none;
+}
+
+/* login form */
+
+.header .login-form {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: white;
+    border-radius: 5rem;
+    box-shadow: grey;
+    width: 35rem;
+    padding: 2rem;
+}
+
+.header .login-form.active {
+    right: 2rem;
+    transition: 0.5s linear;
+}
+
+.header .login-form h3 {
+    font-size: 2.2rem;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+    text-align: center
+}
+
+.header .login-form .box {
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    margin: .7rem 0;
+    color: black;
+    width: 100%;
+
+    text-transform: none;
+}
+
+.header .login-form .remember {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .7rem 0;
+}
+
+.header .login-form .remember label {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.header .login-form .btn {
+    width: 100%;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all.5s ease;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/*Responsive navbar*/
+#menu {
+    display: none;
+}
+
+/* Home Section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.headings {
+    font-family: century;
+    font-size: 3rem;
+    text-align: left;
+    margin: 40px 0px;
+    justify-content: center;
+    padding-right: 450px;
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    transition: .6s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+span {
+    color: #f9004d;
+}
+
+/* footer section styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
